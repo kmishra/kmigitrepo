@@ -1,0 +1,6 @@
+projectKey=tddSonarLintProject
+serverUrl=http://localhost:9000
+serverVersion=6.7.4.38452
+dashboardUrl=http://localhost:9000/dashboard/index/tddSonarLintProject
+ceTaskId=AWPOg8FnHRZq5VR_irQw
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWPOg8FnHRZq5VR_irQw
