@@ -13,6 +13,9 @@ public class DummyUtil {
 		}
 		
 		amountForBroker.byteValue();
+		
+		//TODO: Remove this as this is added to increase SQ issue count
+		Integer.valueOf(factor).intValue();
 
 		if (amount < 0) {
 			amountForBroker = 0L;
