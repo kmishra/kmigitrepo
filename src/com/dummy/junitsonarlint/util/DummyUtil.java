@@ -11,6 +11,8 @@ public class DummyUtil {
 		} catch (Exception e) {
 
 		}
+		
+		amountForBroker.byteValue();
 
 		if (amount < 0) {
 			amountForBroker = 0L;
