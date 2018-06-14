@@ -1,4 +1,4 @@
 #!/bin/sh
-# This is a comment!
+#This is a comment!
 
 echo Hello World

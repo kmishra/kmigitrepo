@@ -6,7 +6,7 @@ use Path::Tiny;
 
 my $dir = path('foo','bar'); # foo/bar
 
-# Iterate over the content of foo/bar
+#Iterate over the content of foo/bar
 my $iter = $dir->iterator;
 while (my $file = $iter->()) {
     

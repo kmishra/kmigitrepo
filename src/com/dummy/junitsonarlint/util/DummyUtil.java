@@ -1,10 +1,22 @@
 package com.dummy.junitsonarlint.util;
 
+/**
+ * 
+ * Util class
+ *
+ */
 public class DummyUtil {
 
+	/**
+	 * 
+	 * @param amount
+	 * @param factor
+	 * @return finalAmount
+	 */
 	public int getFinalAmount(int amount, int factor) {
 		Integer finalAmount = null;
 
+		//Validate amount
 		if (amount < 0) {
 			throw new IllegalArgumentException("Amount should not be less than 0");
 		} else if (amount > 999) {
