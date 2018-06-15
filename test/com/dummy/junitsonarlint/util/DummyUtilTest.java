@@ -31,16 +31,4 @@ public class DummyUtilTest {
 
 	}
 	
-	@Test
-	public void testGetCharCountForString() {
-		
-		String testStr = "aString";
-
-		DummyUtil dummyUtil = new DummyUtil();
-		
-		assertEquals(testStr.length(), dummyUtil.getCharCountForString(testStr));
-		assertEquals(0, dummyUtil.getCharCountForString(null));
-
-	}
-
 }

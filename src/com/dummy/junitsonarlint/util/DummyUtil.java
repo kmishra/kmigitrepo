@@ -28,14 +28,5 @@ public class DummyUtil {
 		return finalAmount;
 
 	}
-	
-	/**
-	 * get ID with input param UserName
-	 * @param userName
-	 * @return Long type 
-	 */
-	public int getCharCountForString(String inputStr) {
-		return inputStr == null ? 0 : inputStr.length();
-	}
 
 }
