@@ -3,17 +3,23 @@ package com.dummy.junitsonarlint.util;
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import javax.annotation.meta.When;
-
 import org.junit.Test;
 
 public class DummyUtilTest {
 
 	@Test
-	public void testExceptionIsThrown() {
+	public void testExceptionIsThrownForAmountGT999() {
 		assertThrows(IllegalArgumentException.class, () -> {
 			DummyUtil dummyUtil = new DummyUtil();
 			dummyUtil.getFinalAmount(1000, 5);
+		});
+	}
+	
+	@Test
+	public void testExceptionIsThrownForAmountLT0() {
+		assertThrows(IllegalArgumentException.class, () -> {
+			DummyUtil dummyUtil = new DummyUtil();
+			dummyUtil.getFinalAmount(-1, 5);
 		});
 	}
 
@@ -28,11 +34,12 @@ public class DummyUtilTest {
 	@Test
 	public void testGetCharCountForString() {
 		
-		String userName = "aUserName";
+		String testStr = "aString";
 
 		DummyUtil dummyUtil = new DummyUtil();
 		
-		assertEquals(userName.length(), dummyUtil.getCharCountForString(userName));
+		assertEquals(testStr.length(), dummyUtil.getCharCountForString(testStr));
+		assertEquals(0, dummyUtil.getCharCountForString(null));
 
 	}
 
