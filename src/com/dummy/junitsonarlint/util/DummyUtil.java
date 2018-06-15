@@ -28,5 +28,14 @@ public class DummyUtil {
 		return finalAmount;
 
 	}
+	
+	/**
+	 * get ID with input param UserName
+	 * @param userName
+	 * @return Long type 
+	 */
+	public Long getIdbyUserName(String userName) {
+		return Long.valueOf(userName);
+	}
 
 }
