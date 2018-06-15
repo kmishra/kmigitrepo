@@ -34,8 +34,8 @@ public class DummyUtil {
 	 * @param userName
 	 * @return Long type 
 	 */
-	public Long getIdbyUserName(String userName) {
-		return Long.valueOf(userName);
+	public int getCharCountForString(String inputStr) {
+		return inputStr == null ? 0 : inputStr.length();
 	}
 
 }

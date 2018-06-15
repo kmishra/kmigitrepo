@@ -3,6 +3,8 @@ package com.dummy.junitsonarlint.util;
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import javax.annotation.meta.When;
+
 import org.junit.Test;
 
 public class DummyUtilTest {
@@ -20,6 +22,17 @@ public class DummyUtilTest {
 
 		DummyUtil dummyUtil = new DummyUtil();
 		assertEquals(50, dummyUtil.getFinalAmount(500, 10));
+
+	}
+	
+	@Test
+	public void testGetCharCountForString() {
+		
+		String userName = "aUserName";
+
+		DummyUtil dummyUtil = new DummyUtil();
+		
+		assertEquals(userName.length(), dummyUtil.getCharCountForString(userName));
 
 	}
 
